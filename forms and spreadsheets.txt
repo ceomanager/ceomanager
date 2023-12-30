@@ -1,0 +1,38 @@
+google form :
+https://docs.google.com/forms/d/1PAqHhaxikdzZXisglSVlUgJYVjNZLzfxqo7H6FQRLTE/edit
+
+
+spread sheet(data from dealer registration form) : 
+https://docs.google.com/spreadsheets/d/1TGlKCkw55m2j428LPsfeiPZrWpgo0yJOtnY2NBfwMFY/edit?usp=shari
+
+
+database link
+// FOOD 
+
+
+// CAR
+
+
+// BANQUET 
+
+
+// CARDS 
+
+
+// DECORATION
+
+
+// LIGHTING 
+
+
+//
+
+
+
+
+
+
+
+link for connecting drive image with html
+:
+http://drive.google.com/uc?export=view&id=(URLID)

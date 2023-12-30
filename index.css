@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Afacad', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+#navbar{
+    list-style: none;
+    display: none;
+}
+#navbar img{
+    width: 40px;
+    height:40px;
+}
+.heading{
+    text-align: center;
+    margin-top: 180px;
+}
+.heading h1{
+    font-size: 65px;
+}
+.list{
+    margin-left: 40%;
+    margin-top: 20px;
+}#content-foot{
+    text-align: center;
+}
+.list ul a{
+    text-decoration: none;color: black;
+}
+.list a:hover{
+    color: rgb(0, 140, 255);
+    transition: 0.3s;
+}
+.list ul li{
+    display: inline;
+    list-style: none;
+    font-size: 25px;
+    margin-left: 65px;
+}
+.logo{
+    position: absolute;
+    margin: 10px;
+}
+.logo img{width: 70px;height: 70px;}
+.events{
+    margin-top: 200px; 
+    text-align: center;
+    width: 100%;
+}
+.events h1{
+font-size: 45px;
+color: rgb(80, 79, 79);
+}
+
+.event{
+    margin-top: 50px;
+}
+.wedding{
+    margin-top: 20px;
+ display: inline;
+
+}
+.events img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.wedding img{ 
+    opacity: 0.8;
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.birthday{ 
+    margin-top: 20px;
+ padding-bottom: 50px;
+ display: inline;
+}
+.birthday img{ 
+    margin-bottom: 50px;
+    opacity: 0.8;
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+}
+.aniversary{
+    margin-top: 20px;
+ margin-bottom: 20px;
+ display: inline;
+}
+.aniversary img{ 
+    margin-bottom: 50px;
+    width: 300px;
+    opacity: 0.8;
+    height: 250px;
+    border-radius: 20px;
+}
+.topics{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+.topics h1{
+    font-size: 45px;
+    color: rgb(80, 79, 79);
+    }
+    .topics a:hover{
+        opacity: 0.6;
+        color: rgb(0, 140, 255);
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .topics a img{
+        opacity: 0.8;
+    }
+    .food img{ 
+        width: 230px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .catering img{ 
+        width: 230px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .music img{ 
+        width: 230px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .lighting img{ 
+        width: 230px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .decoration img{ 
+        width: 230px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .cars img{
+        width: 230px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .lodge img{
+        width: 230px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .topics .event a{
+        margin-top: 50px;
+        display: inline-block;
+        color: black;text-decoration: none;
+        font-size: 22px;
+    }
+footer ul li{
+    color: rgb(118, 118, 118);
+    list-style: none;
+}
+footer ul{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#head-foot{
+    font-size: 24px;
+    color: black;
+}
+footer ul li{font-size: 20px;}
+footer ul a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(116, 114, 114);
+}
+footer{
+    text-align: center;
+    background:rgb(240, 237, 237);
+    width: 100%;
+    padding-top: 50px;
+}.banner-quote h1{
+    font-size: 25px;
+    text-align: center;
+  }.banner-quote{
+   margin-top: 150px;margin-bottom: 150px;
+  }
+
+  .banner-quote img{
+    width: 200px;box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+    height: 50%;opacity: 0.8;
+    border-radius: 2000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: solid 1.3em rgba(#000, .2);
+  }
+
+
+
+@media(min-width:1250px){
+ .wedding{
+    margin-left: 50px;
+ }
+ .birthday{
+    margin-left: 50px;
+ }
+ .aniversary{
+    margin-left: 50px; 
+ }
+ .topics a{
+    margin-left: 70px;
+    
+ }
+ 
+}
+@media(max-width:1200px){
+#content-foot{
+    /* visibility: hidden; */
+    margin-top: -10000px;
+    margin-left: 0%;
+    position: absolute;
+    background-color: rgb(0, 140, 255);color: white;
+    height: auto;padding-bottom: 200px;
+    text-align: center;
+    padding-right:50px ;padding-bottom: 200%;
+    transition: 0.5s;
+}.banner-quote{
+    text-align: center;
+    margin: 0;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+#content-foot{
+padding-top: 2%;
+}
+ #navbar{margin-left: 75%;
+    display:block;
+    margin-top: 50px;
+    padding-bottom: 30px;
+ }  
+ .list ul li{
+    display: block;
+    padding-top: 30px;
+ }.list ul a{
+    text-decoration: none;color: white;
+}
+}

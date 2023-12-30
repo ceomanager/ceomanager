@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="icons8-businessman-96.png" type="image/x-icon">
+</head>
+<style>  @import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Afacad', sans-serif;
+}.contact{display: block;}
+.form{text-align: center;
+ border-radius:20px ;   background: rgb(224, 223, 223);display: inline-block;padding: 40px;
+}#error-error{display: none;justify-content: center;}
+.form h1{font-size: 40px;text-align: left;}span{color: rgb(0, 140, 255);}
+input{font-size: 18px;outline: none; border: 1px solid white;border-radius: 1px;
+width: 200px;padding: 8px;padding-left: 10px;padding-right: 10px;}
+textarea{width: 200px;font-size: 18px;margin-top: 20px;padding-left: 10px;padding-right: 10px;padding:8px;outline: none;border: 1px solid white;}
+.contact{text-align: center;margin-top: 50px;}#button{background: rgb(0, 140, 255);border: 1px solid rgb(0, 140, 255);
+cursor: pointer;font-size: 18px;
+padding: 5px;color: white;margin-left: 70%;padding-left: 10px;padding-right: 10px;
+}button:hover{
+    color: rgb(0, 140, 255);background-color: transparent;transition: 0.3s;
+}#msg-error{color: rgb(245, 88, 85);font-size: 16px;}#name-error{color: rgb(245, 88, 85);font-size: 16px;}
+#error-msg{display: block;text-align: center;margin-top: 150px;font-size: 20px;}#back{color: rgb(0, 140, 255);font-size: 12px;color: white;
+   font-size: 18px; background: rgb(0, 140, 255);border: 1px solid rgb(0, 140, 255);padding-left: 20px;
+padding-right: 20px;padding-top: 5px;padding-bottom: 5px;cursor: pointer;
+}
+#email a{color: rgb(0, 140, 255);text-decoration: none;}
+#email a:hover{text-decoration: underline;}
+</style>
+<body><div class="contact" id="contact-del">
+<div class="form">
+  <h1>Contact <span>Us</span></h1><br>
+  <span id="email"><a href="mailto:ceomanager8596@gmail.com">email</a></span> : ceomanager8596@gmail.com
+  <br><br>
+  <input id="name-text" type="text" placeholder="Name"><br><span id="name-error"></span><br>
+  <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+ <br><span id="msg-error"></span><br><button onclick="check()" id="button">Send</button>
+</div></div>
+<div class="error" id="error-error">
+<div id="error-msg">
+    <img src="icons8-correct-96.png" alt=""><br><br>
+    Message Sent Succesfully <br> Or <br> Contact With Email <br><br><a href="index.html"><button id="back" href="index.html">Ok</button></a>
+</div></div>
+</body>
+</html>
+<script>
+    function check(){
+        var name=document.getElementById('name-text').value;
+        var msg=document.getElementById('msg').value;
+        var msgb=document.getElementById('msg');
+        var nameb=document.getElementById('name-text');
+        var namee=document.getElementById('name-error');
+        var texte=document.getElementById('msg-error');
+        var send=false;
+        if(name.length<3){
+           namee.innerHTML="# Name is too short";
+           nameb.style.border="1px solid rgb(245, 88, 85)"
+           send=false;
+        }
+        if(name.length>3){
+            namee.innerHTML=" ";
+            nameb.style.border="1px solid white";
+            send=true;
+        }
+        if(msg.length<5){
+            texte.innerHTML="# Message is too short";
+            msgb.style.border="1px solid rgb(245, 88, 85)";
+            send=false;
+        }
+        if(msg.length>3){
+            msgb.style.border="1px solid white";
+            texte.innerHTML=" ";
+            send=true
+        }
+        var doc=document.getElementById('contact-del');
+        if(send){
+            doc.remove();
+            document.getElementById('error-error').style.display="flex";
+        }
+
+    }
+</script>
